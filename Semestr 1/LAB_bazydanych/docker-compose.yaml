@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  mysql:
+    platform: linux/x86_64
+    image: mysql
+    container_name: MYSQL_WSB
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    ports:
+      - 4590:3306
